@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلول والأسعار</title>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="inde.css">
+    
+<!--- for scrool fade-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--- end for scrool fade-->
+</head>
+<body>
+  <a href="index.html#start"  class="start-button">ابدأ نجاحك الآن</a>
+
+  <div class="offer-bar">🎁 احصل على خصم 10% لفترة محدودة – <a href="index.html#start" style="color: white; text-decoration: underline;">اضغط الآن</a></div>
+  <header>
+    <nav class="bg-[#3ecced] border-gray-200 py-2.5" style="background-color: #3b5a5b;">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+            <a href="#" class="flex items-center">
+               <img src="Asset4.png" width="50px" alt="">
+            </a>
+            <div class="flex items-center lg:order-2">
+                <div class="hidden mt-2 mr-4 sm:inline-block">
+                    <span></span>
+                </div>
+
+                <a href="index.html#start"
+                    class="text-white bg-[#3ecced] hover:bg-[#3b5a5b] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none transition-colors duration-300" style="padding-left: 30px;padding-right: 30px;">
+                    ابدأ
+                </a>
+                
+                <button data-collapse-toggle="mobile-menu-2" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-white rounded-lg lg:hidden hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="mobile-menu-2" aria-expanded="true">
+                    <span class="sr-only">افتح القائمة</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="index.html" class="block py-2 pl-3 pr-4 text-white rounded lg:p-0 hover:text-[#3b5a5b] transition-colors duration-300">الرئيسية</a>
+                    </li>
+                    <li>
+                      <a href="pricesUp.html" class="block py-2 pl-3 pr-4 text-white border-b border-gray-100 hover:text-[#3b5a5b] lg:border-0 lg:p-0 transition-colors duration-300"> لماذا نحن</a>
+                    </li>
+                    <li>
+                        <a href="AboutUs.html" class="block py-2 pl-3 pr-4 text-white border-b border-gray-100 hover:text-[#3b5a5b] lg:border-0 lg:p-0 transition-colors duration-300"> اراء العملاء</a>
+                    </li>
+                    <li>
+                        <a href="prices.html" class="block py-2 pl-3 pr-4 text-white border-b border-gray-100 hover:text-[#3b5a5b] lg:border-0 lg:p-0 transition-colors duration-300">الحلول والأسعار</a>
+                    </li>
+                    <li>
+                      <a href="howWepBlusHelpU.html" class="block py-2 pl-3 pr-4 text-white border-b border-gray-100 hover:text-[#3b5a5b] lg:border-0 lg:p-0 transition-colors duration-300">الاسئلة الشائعة</a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html" class="block py-2 pl-3 pr-4 text-white border-b border-gray-100 hover:text-[#3b5a5b] lg:border-0 lg:p-0 transition-colors duration-300"> اطلب الآن</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+</header>
+
+  <!-- start whatsup button-->
+       <!-- زر الفقاعة -->
+       <div class="whatsapp-chat">
+        <div class="chat-toggle" onclick="toggleChat()">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="واتساب">
+        </div>
+      
+        <!-- نافذة الدردشة -->
+        <div class="chat-box" id="chatBox">
+          <div class="chat-header">
+            <span>مرحبا بك 👋</span>
+            <span class="close-btn" onclick="toggleChat()">×</span>
+          </div>
+          <div class="chat-body">
+            <p>كيف يمكننا مساعدتك؟</p>
+            <a href="https://wa.me/962797868142" target="_blank" class="chat-btn">راسلنا على واتساب</a>
+          </div>
+        </div>
+      </div>
+      
+           
+            <script>
+              function toggleChat() {
+                const chatBox = document.getElementById('chatBox');
+                chatBox.style.display = chatBox.style.display === 'flex' ? 'none' : 'flex';
+              }
+            </script>
+            
+            
+             <!-- end whats -->
+               <!-- for scrool animation -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+     <!-- end the scrool -->
+
+ <!-- header -->
+ 
+
+<!-- end header -->
+<!-- the beggest -->
+
+<div class="stats-container" style="margin-bottom: 50px;">
+
+  <h2 data-aos="fade-up"data-aos-once="true" class="stats-header" style="display: flex; justify-content: center; align-items: center; color: #3b5a5b; margin-top: 100px; margin-bottom: 10px; font-size: 35px;">من أفضل المنصات العربية للتجارة الإلكترونية والمواقع في الشرق الأوسط</h2>
+  <p data-aos="fade-up"data-aos-once="true" class="stats-subtext" style="display: flex; justify-content: center; align-items: center; color: #3b5a5b; margin-bottom: 20px; font-size: large;" >أنشئ متجرك اليوم وانضم لعشرات الآلاف من الأفراد والمؤسسات والشركات الناجحة</p>
+  <div class="stats-grid">
+     
+      <div class="stat-box" data-aos="fade-up"data-aos-once="true" >
+          <span class="stat-icon"><img data-aos="fade-up"data-aos-once="true" src="store.png" width="30" height="30" alt=""></span>
+          <div>
+              <strong data-aos="fade-up"data-aos-once="true">+63,000</strong><br>
+              متجر إلكتروني نشط
+          </div>
+      </div>
+      <div class="stat-box" data-aos="fade-up"data-aos-once="true" >
+          <span data-aos="fade-up"data-aos-once="true" class="stat-icon" ><img src="world-wide-web.png" width="30" height="30" alt=""></span>
+          <div>
+              <strong data-aos="fade-up"data-aos-once="true">+45,000</strong><br>
+              موقع إلكتروني نشط
+          </div>
+      </div>
+  </div>
+</div>
+<!-- end the biggest-->
+
+<h1 style="color: #3b5a5b; display: flex; justify-content: center; align-items: center; font-size: xx-large;" data-aos="fade-up"data-aos-once="true" >انطلق بتجارتك مهما كان قطاعك</h1>
+<div class="categories">
+    <div class="category"><span class="category-icon" data-aos="fade-up"data-aos-once="true"><img src="heart.png"width="20px" height="30px" alt=""></span>الصحة واللياقة</div>
+    <div class="category"><span class="category-icon"data-aos="fade-up"data-aos-once="true"><img src="gem (1).png"width="20px" height="30px" alt=""></span>المجوهرات</div>
+    <div class="category"><span class="category-icon"data-aos="fade-up"data-aos-once="true"><img src="laptop-mobile.png"width="20px" height="30px" alt=""></span>الإلكترونيات</div>
+    <div class="category"><span class="category-icon"data-aos="fade-up"data-aos-once="true"><img src="console-controller.png"width="20px" height="30px" alt=""></span>المنتجات الرقمية</div>
+    <div class="category"><span class="category-icon"data-aos="fade-up"data-aos-once="true"><img src="dress.png"width="20px" height="30px" alt=""></span>عبايات وأزياء</div>
+    <div class="category"><span class="category-icon"data-aos="fade-up"data-aos-once="true"><img src="lipstick.png"width="20px" height="30px" alt=""></span>العناية والتجميل</div>
+    <div class="category"><span class="category-icon"data-aos="fade-up"data-aos-once="true"><img src="room-service.png"width="20px" height="30px" alt=""></span>المطاعم والمقاهي</div>
+</div>
+    <!-- end pricess-->
+
+
+
+<!-- start web store-->
+<section>
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <h2> </h2>
+
+  <article id="arti_prices">
+    <section class="p-4 md:p-8" >
+      <div class="py-8 max-w-screen-xl lg:py-16">
+        <div class="mx-auto max-w-3xl text-center pb-12 md:pb-20">
+          <h2 class="text-3xl font-bold sm:text-4xl mb-4" style="color: #ffffff;" data-aos="fade-up"data-aos-once="true" id="start">الباقات المتوفرة</h2>
+         <br> <p class="text-xl text-gray-600" style="color: #3b5a5b; font-weight: bolder;" data-aos="fade-up"data-aos-once="true"><strong> تعرَّف إلى خدمة تصميم المواقع لدينا: نمنحك موقعًا مُصمَّمًا باحتراف يعبّر عن علامتك التجارية، جاهزًا للتسويق، ومتوافقًا مع جميع الأجهزة. نعتني بكل التفاصيل من الفكرة الأولى حتى الإطلاق والدعم المستمر ليظل تركيزك منصبًّا على نجاح أعمالك لا على الجوانب التقنية.
+  
+         </strong></p>
+        <br>  <h2 class="text-2xl text-gray-600" style="color: #ffffff; font-size: xx-large; margin-top: 40px;" data-aos="fade-up"data-aos-once="true"> باقات المواقع الاكترونية</h2>
+        </div>
+        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0" data-aos="fade-up"data-aos-once="true">
+          
+          <div class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8 border border-[#3b5a5b] transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+          
+            
+           
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"> باقة الانطلاق	</h3>
+            <p class="font-light text-2xl" style="color: #ffffff;"><b data-aos="fade-up"data-aos-once="true">    حضور رقمي فوري بتكلفة مناسبة
+            </b></p>
+            
+            <div class="flex justify-center items-baseline my-1 h-10">
+              
+            </div>
+            <div class="flex justify-center items-baseline my-9">
+              <span class="mr-2 text-4xl font-extrabold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"> 1,599 ريال</span>
+              <span class="text-white text-2xl" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"></span>
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+            
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> الدفع مرة واحدة فقط</span>
+               
+              </li>
+            <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 105px;"> يعني لك الملكية فيه ومافي مصاريف شهريه</p>
+
+            
+            
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> 4 صفحات متكاملة الإحتراف (تناسب موقعك)</span>
+               
+              </li>
+            <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 105px;">   مثل الرئيسية – من نحن – خدمات – تواصل</p>
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">تصميم متجاوب يعمل بكفاءة على الجوال والكمبيوتر</span>
+          
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 55px;">  تصميم متجاوب يعمل بكفاءة على الجوال والكمبيوتر
+              </p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true"style="font-weight: bolder; font-size: large;">ازار للتواصل مثل واتساب وربط بالسوشيال ميديا</span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 20px;"> أزرار و روابط مباشرة للواتساب،انستقرام، تويتر، وغيرها</p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">استضافة سريعة وآمنة مجانًا لأول 3 أشهر </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 100px;"> استضافة سريعة وآمنة مجانًا لمدة 3 أشهر </p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">شهادة أمان SSL مجانية:
+                </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 40px;"> حماية بيانات العملاء وشعار القفل الأخضر في المتصفح </p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> حماية أمنية متقدمة </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 20px;">حماية أمنية مثل تأمين الموقع ضد هجمات DoS و DDoS</p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large; "> دومين مجاني لمدة سنة  </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 40px;">حصل على اسم نطاق خاص بك مجانًا لمدة سنة كاملة</p>
+  
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> دعم فني لمدة شهر كامل  </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;"> نحن معك بعد التسليم  فريقنا جاهز يخدمك عشان تطمّن إن موقعك شغال 100% من البداية</p>
+  
+            </ul>
+  <a href="contactUs.html" style="background-color: #3b5a5b; padding: 15px;padding-left: 120px;padding-right: 120px; color: white;"> استثمر الان </a>
+          </div>
+  
+          <div class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8 border border-[#3b5a5b] transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true">باقة تَوسُّع	</h3>
+            <div class="flex justify-center items-baseline my-1 h-10">
+              <p class="font-light text-2xl" style="color: #ffffff;"><b data-aos="fade-up"data-aos-once="true">    متجر إلكتروني احترافي بمزايا متقدمة، الأكثر طلبًا لتنمية أعمالك.
+              </b></p>
+  
+            </div>
+            <div class="flex justify-center items-baseline my-9">
+              <span class="mr-2 text-4xl font-extrabold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"><br>1,999 ريال</span>
+              <span class="text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"></span>
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+             
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> الدفع مرة واحدة فقط</span>
+               
+              </li>
+            <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 105px;"> يعني لك الملكية فيه ومافي مصاريف شهريه</p>
+
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">كل مزايا باقة الأنطلاق</span>
+  
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 100px; "> بالأضافة الى مزايا وخصائص اخرى مثل</p>
+  
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">ثلاث صفحات اضافية</span>
+  
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 110px;">مثل الاسئله الشائعة و  الحلول و لماذا نحن</p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> ميزه اضافية خاصة </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 150px;"> ميزة خاصة ومميزة جدا  لموقعك </p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">  مدعوم تسويقيا</span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 40px;">خبير مختص يرفع مبيعاتك بالأضافه للاقسام التسويقية</p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">استضافة سريعة وآمنة مجانًا لأول 6 أشهر </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 100px;"> استضافة سريعة وآمنة مجانًا لمدة 6 أشهر </p>
+  
+  
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> بريد الكتروني احترافي لمدة شهر مجانا</span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 140px;">لتظهر بشكل احترافي  أمام عملائك </p>
+  
+  
+  
+            
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large; "> دومين مجاني لمدة سنة  </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 50px;">حصل على اسم نطاق خاص بك مجانًا لمدة سنة كاملة</p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> دعم فني لمدة 3أشهر كامل  </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;"> نحن معك بعد التسليم  فريقنا جاهز يخدمك عشان تطمّن إن موقعك شغال 100% من البداية</p>
+  
+            </ul>
+  <a href="contactUs.html" style="background-color: #3b5a5b; padding: 15px;padding-left: 120px;padding-right: 120px; color: white;"> استثمر الان </a>
+          </div>
+  
+          <div class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8 border border-[#3b5a5b] transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true">باقة ريادة بلس
+            </h3>
+            <div class="flex justify-center items-baseline my-1 h-10">
+              <p class="font-light text-2xl" style="color: #ffffff;" data-aos="fade-up"data-aos-once="true"><b>   أداء احترافي متكامل يقود الصدارة
+              </b></p>
+  
+            </div>
+            <div class="flex justify-center items-baseline my-9">
+              <span data-aos="fade-up"data-aos-once="true" class="mr-2 text-4xl font-extrabold text-white" style="color: #3b5a5b;"><br>2,499 ريال</span>
+              <span data-aos="fade-up"data-aos-once="true" class="text-white" style="color: #3b5a5b;"></span>
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+            
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> الدفع مرة واحدة فقط</span>
+               
+              </li>
+            <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 105px;"> يعني لك الملكية فيه ومافي مصاريف شهريه</p>
+
+
+
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">جميع مزايا باقة انطلاق و  توسع  </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 200px;"> بالاضافه الى الاتي:</p>
+            
+            
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> صفحات اضافية متخصصة</span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;">صفحات متخصصة بمجالك  تزيد ثقه عملائك</p>
+              
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> استضافه مجانية لمدة سنة </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 100px;">استضافة سريع و امنه لمدة سنة مجاناً  </p>
+            
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">بريد الكتروني احترافي   </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 70px;">بريد الكتروني احترافي لمدة ثلاث أشهر مجاناً   </p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">محسن على محركات البحث </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 170px;"> زيادة ظهورك امام العملاء </p>
+  
+  
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">  الوضع المظلم</span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 160px;"> يزيد من احترافية موقعك </p>
+            
+              
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> قسم اراء العملاء </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;">قسم يزيد مبيعاتك  ويعزز ثقتك اما العملاء </p>
+           
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">  أكثر من ميزة خاصة </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 140px;"> اكثر من ميزه خاصة لموقعك</p>
+           
+           
+            </ul>
+  <a href="contactUs.html" style="background-color: #3b5a5b; padding: 15px;padding-left: 120px;padding-right: 120px; color: white;"> استثمر الان </a>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  </article>
+  <!-- 
+  start smart one -->
+<div class="subscribe-box" style="margin: auto;">
+  <h2  data-aos="fade-up"data-aos-once="true">سمعت عن باقة المواقع الذكية؟</h2>
+  <p style="font-size: large;" data-aos="fade-up"data-aos-once="true"> تبدأ مشروعك بس ب 799 ريال فقط</p>
+   <li style="font-size: large;" data-aos="fade-up"data-aos-once="true"> الدفع مرة واحدة فقط</li>
+
+    <br>
+    <button  data-aos="fade-up"data-aos-once="true" class="subscribe-btn" type="submit"><a href="index.html#contactUSh"> تواصل معنا </a>    </button>
+  
+</div>
+<!-- end it -->
+
+<!-- end web store-->
+ <!-- strat do u have any question ?? -->
+<div style="background-color: #3eceed; height: 300px;"> 
+  <div style="font-family: 'Tajawal', sans-serif; background-color: #3eceed; text-align: center; direction: rtl; margin: 0; padding: 0;">
+  
+      <section style="background-color: #3b5a5b; color: white; padding: 40px; max-width: 900px; margin: 50px auto; border-radius: 20px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+          <span data-aos="fade-up"data-aos-once="true" style="display: inline-block; background-color: #3eceed; padding: 6px 14px; font-size: 14px; border-radius: 20px; margin-bottom: 15px;">فريقنا يتواصل معك بأسرع وقت</span>
+          <h2 data-aos="fade-up"data-aos-once="true" style="font-size: 32px; font-weight: 700;">عندك سؤال؟</h2>
+          <p data-aos="fade-up"data-aos-once="true" style="font-size: 16px; margin: 10px 0 20px;">أرسل استفسارك في أي وقت، فريقنا على طول يرد — غالبًا خلال دقائق!</p>
+          <a data-aos="fade-up"data-aos-once="true" href="index.html#contactUSh" style="display: inline-block; background-color: #3eceed; color: white; padding: 12px 24px; border-radius: 25px; font-size: 16px; text-decoration: none;">تواصل معنا</a>
+      </section>
+  
+    </div>
+  </div>
+  <!-- end do u have any question ?? -->
+
+
+
+ <!-- start elcto store-->
+<section>
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <h2> </h2>
+
+  <article id="arti_prices">
+    <section class="p-4 md:p-8" >
+      <div class="py-8 max-w-screen-xl lg:py-16">
+        <div class="mx-auto max-w-3xl text-center pb-12 md:pb-20">
+          <h2 class="text-3xl font-bold sm:text-4xl mb-4" style="color: #ffffff;" data-aos="fade-up"data-aos-once="true">الباقات المتوفرة</h2>
+         <br> <p class="text-xl text-gray-600" style="color: #3b5a5b; font-weight: bolder;" data-aos="fade-up"data-aos-once="true"><strong> امتلك متجرك الإلكتروني الآن!
+          صمّمنا لك خدمة متكاملة تضعك على طريق النجاح: متجر إلكتروني أنيق، سريع، جاهز للبيع والتسويق، ومتوافق مع جميع الأجهزة.
+          من الفكرة الأولى إلى الإطلاق والدعم المستمر — نعتني بكل التفاصيل لتنجح أنت في مبيعاتك وتتفرغ لتوسيع أعمالك.
+          
+          لا تضيع وقتك، واجعل علامتك التجارية تتألق أونلاين اليوم!
+         </strong></p>
+        <br>  <h2 class="text-2xl text-gray-600" style="color: #ffffff; font-size: xx-large; margin-top: 40px;" data-aos="fade-up"data-aos-once="true"> باقات المتاجر الاكترونية</h2>
+        </div>
+        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0" data-aos="fade-up"data-aos-once="true">
+          
+          <div class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8 border border-[#3b5a5b] transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+          
+            
+           
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"> باقة الانطلاق	</h3>
+            <p class="font-light text-2xl" style="color: #ffffff;"><b data-aos="fade-up"data-aos-once="true">    حضور رقمي فوري بتكلفة مناسبة
+            </b></p>
+            
+            <div class="flex justify-center items-baseline my-1 h-10">
+              
+            </div>
+            <div class="flex justify-center items-baseline my-9">
+              <span class="mr-2 text-4xl font-extrabold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"> 1,799 ريال</span>
+              <span class="text-white text-2xl" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"></span>
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> الدفع مرة واحدة فقط</span>
+               
+              </li>
+            <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 105px;"> يعني لك الملكية فيه ومافي مصاريف شهريه</p>
+
+             
+             
+             
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> صفحات متكاملة الاحتراف لجميع الأقسام</span>
+               
+              </li>                                                                                                                                                     
+            <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;">   مثل قسم الاحذية – الهوديات – الأساور – العناية</p>
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">تصميم متجاوب يعمل بكفاءة على الجوال والكمبيوتر</span>
+          
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 55px;">  تصميم متجاوب يعمل بكفاءة على الجوال والكمبيوتر
+              </p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true"style="font-weight: bolder; font-size: large;">ازار للتواصل مثل واتساب وربط بالسوشيال ميديا</span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 20px;"> أزرار و روابط مباشرة للواتساب،انستقرام، تويتر، وغيرها</p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true"style="font-weight: bolder; font-size: large;">  بوابات دفع </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 10px;"> الدفع من خلال بايبال وبوابة سعودية من اختيارك وعند الاستلام</p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">استضافة سريعة وآمنة مجانًا لأول 3 أشهر </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 100px;"> استضافة سريعة وآمنة مجانًا لمدة 3 أشهر </p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">شهادة أمان SSL مجانية:
+                </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 40px;"> حماية بيانات العملاء وشعار القفل الأخضر في المتصفح </p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> حماية أمنية متقدمة </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 20px;">حماية أمنية مثل تأمين الموقع ضد هجمات DoS و DDoS</p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large; "> دومين مجاني لمدة سنة  </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 40px;">حصل على اسم نطاق خاص بك مجانًا لمدة سنة كاملة</p>
+  
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> دعم فني لمدة شهر كامل  </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;"> نحن معك بعد التسليم  فريقنا جاهز يخدمك عشان تطمّن إن موقعك شغال 100% من البداية</p>
+  
+            </ul>
+  <a href="contactUs.html" style="background-color: #3b5a5b; padding: 15px;padding-left: 120px;padding-right: 120px; color: white;"> استثمر الان </a>
+          </div>
+  
+          <div class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8 border border-[#3b5a5b] transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true">باقة تَوسُّع	</h3>
+            <div class="flex justify-center items-baseline my-1 h-10">
+              <p class="font-light text-2xl" style="color: #ffffff;"><b data-aos="fade-up"data-aos-once="true">    متجر إلكتروني احترافي بمزايا متقدمة، الأكثر طلبًا لتنمية أعمالك.
+
+
+              </b></p>
+  
+            </div>
+            <div class="flex justify-center items-baseline my-9">
+              <span class="mr-2 text-4xl font-extrabold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"><br>2,299 ريال</span>
+              <span class="text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"></span>
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+             
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> الدفع مرة واحدة فقط</span>
+               
+              </li>
+            <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 105px;"> يعني لك الملكية فيه ومافي مصاريف شهريه</p>
+
+             
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">كل مزايا باقة الأنطلاق</span>
+  
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold;margin-left: 120px; "> بالأضافة الى مزايا وخصائص اخرى مثل</p>
+  
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">ثلاث صفحات اضافية</span>
+  
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 110px;">مثل الاسئله الشائعة و  الحلول و لماذا نحن</p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> ميزه اضافية خاصة </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 150px;"> ميزة خاصة ومميزة جدا  لموقعك </p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">  مدعوم تسويقيا</span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 40px;">خبير مختص يرفع مبيعاتك بالأضافه للاقسام التسويقية</p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true"style="font-weight: bolder; font-size: large;">  بوابات دفع </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 90px;"> الدفع من خلال العديد من البوابات السعودية </p>
+
+
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">استضافة سريعة وآمنة مجانًا لأول 6 أشهر </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 100px;"> استضافة سريعة وآمنة مجانًا لمدة 6 أشهر </p>
+  
+  
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> بريد الكتروني احترافي لمدة شهر مجانا</span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 140px;">لتظهر بشكل احترافي  أمام عملائك </p>
+  
+  
+  
+            
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large; "> دومين مجاني لمدة سنة  </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 50px;">حصل على اسم نطاق خاص بك مجانًا لمدة سنة كاملة</p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> دعم فني لمدة 3أشهر كامل  </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;"> نحن معك بعد التسليم  فريقنا جاهز يخدمك عشان تطمّن إن موقعك شغال 100% من البداية</p>
+  
+            </ul>
+  <a href="contactUs.html" style="background-color: #3b5a5b; padding: 15px;padding-left: 120px;padding-right: 120px; color: white;"> استثمر الان </a>
+          </div>
+  
+          <div class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8 border border-[#3b5a5b] transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true">باقة ريادة بلس
+            </h3>
+            <div class="flex justify-center items-baseline my-1 h-10">
+              <p class="font-light text-2xl" style="color: #ffffff;" data-aos="fade-up"data-aos-once="true"><b>   أداء احترافي متكامل يقود الصدارة
+              </b></p>
+  
+            </div>
+            <div class="flex justify-center items-baseline my-9">
+              <span data-aos="fade-up"data-aos-once="true" class="mr-2 text-4xl font-extrabold text-white" style="color: #3b5a5b;"><br>3,014 ريال</span>
+              <span data-aos="fade-up"data-aos-once="true" class="text-white" style="color: #3b5a5b;"></span>
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+            
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> الدفع مرة واحدة فقط</span>
+               
+              </li>
+            <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 105px;"> يعني لك الملكية فيه ومافي مصاريف شهريه</p>
+
+
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">جميع مزايا باقة انطلاق و  توسع  </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 200px;"> بالاضافه الى الاتي:</p>
+            
+            
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> صفحات اضافية متخصصة</span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;">صفحات متخصصة بمجالك  تزيد ثقه عملائك</p>
+              
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> استضافه مجانية لمدة سنة </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 100px;">استضافة سريع و امنه لمدة سنة مجاناً  </p>
+            
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true"style="font-weight: bolder; font-size: large;">  بوابات دفع </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 10px;"> الدفع من خلال بايبال وبوابة سعودية من اختيارك وعند الاستلام</p>
+  
+
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">بريد الكتروني احترافي   </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 70px;">بريد الكتروني احترافي لمدة ثلاث أشهر مجاناً   </p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">محسن على محركات البحث </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 170px;"> زيادة ظهورك امام العملاء </p>
+  
+  
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">  الوضع المظلم</span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 160px;"> يزيد من احترافية موقعك </p>
+            
+              
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> قسم اراء العملاء </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;">قسم يزيد مبيعاتك  ويعزز ثقتك اما العملاء </p>
+           
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">  أكثر من ميزة خاصة </span>
+              
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 140px;"> اكثر من ميزه خاصة لموقعك</p>
+           
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> دعم فني لمدة 6أشهر كامل  </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px;"> نحن معك بعد التسليم  فريقنا جاهز يخدمك عشان تطمّن إن موقعك شغال 100% من البداية</p>
+              
+                 
+           
+            </ul>
+  <a href="contactUs.html" style="background-color: #3b5a5b; padding: 15px;padding-left: 120px;padding-right: 120px; color: white;"> استثمر الان </a>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  </article>
+<!-- end it-->
+ <!-- start why you wait-->
+<div class="subscribe-box" style="margin: auto;">
+  <h2  data-aos="fade-up"data-aos-once="true">سمعت عن باقة المتاجر الذكيه؟</h2>
+  <p style="font-size: large;" data-aos="fade-up"data-aos-once="true"> تبدأ مشروعك بس ب 1,399 ريال فقط</p>
+    <li style="font-size: large;" data-aos="fade-up"data-aos-once="true"> الدفع مرة واحدة فقط</li>
+<Br>
+    
+    <button  data-aos="fade-up"data-aos-once="true" class="subscribe-btn" type="submit"><a href="index.html#contactUSh"> تواصل معنا </a>    </button>
+  
+</div>
+
+<!-- end it-->
+ <!-- start web store-->
+<section>
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <h2> </h2>
+
+  <article id="arti_prices">
+    <section class="p-4 md:p-8" >
+      <div class="py-8 max-w-screen-xl lg:py-16">
+        <div class="mx-auto max-w-3xl text-center pb-12 md:pb-20">
+          <h2 class="text-3xl font-bold sm:text-4xl mb-4" style="color: #ffffff;" data-aos="fade-up"data-aos-once="true">الباقات المتوفرة</h2>
+         <br> <p class="text-xl text-gray-600" style="color: #3b5a5b; font-weight: bolder;" data-aos="fade-up"data-aos-once="true"><strong> باقات النمو الرقمي هي خطوتك الذكية لتطوير متجرك من الداخل والخارج. نعتني بكل التفاصيل، من تحسين تجربة المتسوقين، إلى إدارة فعالة واستضافة آمنة وسريعة، وصولًا إلى تسويق احترافي يرفع مبيعاتك ويعزز ظهورك. مع فريق مختص بجانبك، يتحول متجرك إلى مشروع ناجح ينمو بثبات ويترك بصمته في السوق.
+  
+         </strong></p>
+        <br>  <h2 class="text-2xl text-gray-600" style="color: #ffffff; font-size: xx-large; margin-top: 40px;" data-aos="fade-up"data-aos-once="true"> باقات  النمو الرقمي </h2>
+        </div>
+        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0" data-aos="fade-up"data-aos-once="true">
+          
+          <div class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8 border border-[#3b5a5b] transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+          
+            
+           
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"> باقة الخدمات	</h3>
+            <p class="font-light text-2xl" style="color: #ffffff;"><b data-aos="fade-up"data-aos-once="true">    
+            </b></p>
+            
+            <div class="flex justify-center items-baseline my-1 h-10">
+              
+            </div>
+            <div class="flex justify-center items-baseline my-9">
+              <span class="mr-2 text-4xl font-extrabold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"> 599 ريال  </span>
+              <span class="text-white text-2xl" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"></span>
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">نحول محتواك إلى تجربة مقنعة وواضحة لعملائك</span>
+          
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 70px;">  تنسيق  المحتوى ليعرض خدماتك بوضوح وجاذبية
+              </p>
+  
+
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">استضافة سريعة وآمنة مجانًا لأول 3 أشهر </span>
+              </li>
+              <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 100px;"> استضافة سريعة وآمنة مجانًا لمدة 3 أشهر </p>
+  
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> دعم فني احترافي لمده 3 أشهر</span>
+               
+              </li>
+            <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 105px;">  نحن معك بعد التسليم فريقنا جاهز يخدمك عشان تطمّن إن موقعك شغال 100% من البداية</p>
+          
+            </ul>
+  <a href="contactUs.html" style="background-color: #3b5a5b; padding: 15px;padding-left: 120px;padding-right: 120px; color: white;"> استثمر الان </a>
+          </div>
+  
+          <div class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8 border border-[#3b5a5b] transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true">باقة التسويق	</h3>
+            <div class="flex justify-center items-baseline my-1 h-10">
+              <p class="font-light text-2xl" style="color: #ffffff;"><b data-aos="fade-up"data-aos-once="true">    
+              </b></p>
+  
+            </div>
+            <div class="flex justify-center items-baseline my-9">
+              <span class="mr-2 text-4xl font-extrabold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true">499  ريال</span>
+              <span class="text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"></span>
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+             
+             
+              <li class="flex items-center space-x-3">
+                <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                </svg>
+                <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">محتوى بصري ونصي مخصص لجذب العملاء</span>
+  
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 80px; ">   تصميم محتوى وصور تسويقية لجذب العملاء.</p>
+  
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">قسم عدد العملاء السعداء</span>
+  
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 140px;">مثل كم زبون اشترى وكان سعيد</p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;"> تحسين على محرك البحث   </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 130px;"> جعل الموقع في الصدارة عند البحث</p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6 text-error" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">  قسم اراء العملاء </span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 90px;">قسم فيه كم عميل سعيد وارائهم  ب خدماتك</p>
+  
+  <li class="flex items-center space-x-3">
+    <svg class="w-6 h-6" style="color: #3b5a5b;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+    </svg>
+    <span class="text-white" data-aos="fade-up"data-aos-once="true" style="font-weight: bolder; font-size: large;">قصص نجاح العملاء</span>
+  </li>
+  <p style="color: #3b5a5b;font-size: medium;font-weight: bold; margin-left: 160px;"> يتم  ذكر كم قصه نجاح لعميلك </p>
+  
+  
+            </ul>
+  <a href="contactUs.html" style="background-color: #3b5a5b; padding: 15px;padding-left: 120px;padding-right: 120px; color: white;"> استثمر الان </a>
+          </div>
+  
+          <div class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8 border border-[#3b5a5b] transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true">باقة التكامل 
+            </h3>
+            <div class="flex justify-center items-baseline my-1 h-10">
+              <p class="font-light text-2xl" style="color: #ffffff;" data-aos="fade-up"data-aos-once="true"><b>     سوف تتوفر قريباً انتظرونا خصم للمشتركين
+              </b></p>
+  
+
+
+
+              
+            </div>
+            <h3 class="mb-4 text-2xl font-semibold text-white" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true">  	</h3>
+            <p class="font-light text-2xl" style="color: #ffffff;"><b data-aos="fade-up"data-aos-once="true">    
+            </b></p>
+            
+            <div class="flex justify-center items-baseline my-1 h-10">
+              
+            </div>
+            <div class="flex justify-center items-baseline my-9">
+              <span class="mr-2 text-2xl font-extrabold text-white" style="color: #3b5a5b; margin: auto;" data-aos="fade-up"data-aos-once="true"> قريباً  </span>
+              <span class="text-white text-2xl" style="color: #3b5a5b;" data-aos="fade-up"data-aos-once="true"></span>
+            </div>
+            <ul role="list" class="mb-8 space-y-4 text-left">
+            
+             
+              </li>
+  
+        </div>
+      </div>
+    </section>
+  </article>
+  <!-- end bagat-->
+
+  <!-- start footer  --> 
+  <hr style="color: white;">
+  <br><br><br><br><br>
+  <h2 style="display: flex;justify-content: center; align-items: center; color: #3b5a5b;font-size: x-large;"> لا تفوت نجاحك حنا ننتظرك</h2>
+          
+  <br><br>
+  <div style="text-align: center; margin-bottom: 30px;">
+    <a href="#start" style="
+      padding: 10px 30px;
+      color: #3b5a5b;
+      font-size: large;
+      background-color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      display: inline-block;
+    ">استثمر الآن</a>
+  </div>   <!-- end footer  -->
+
+<!-- end start footer -->
+</body>
+</html>
